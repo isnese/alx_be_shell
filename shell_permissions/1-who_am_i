@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Option 1: Using whoami
+whoami
+
+# Option 2: Using id -un
+# id -un
+
+# Option 3: Using awk with the process substitution operator
+ps -e | awk '{print $1}' | head -n 1
+
+# Option 4: Using env with the grep command
+env | grep -Eo '^USER=.*' | cut -d'=' -f2
