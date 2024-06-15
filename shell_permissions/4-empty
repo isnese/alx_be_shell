@@ -1,2 +1,7 @@
 #!/bin/bash
-touch hello; [ $? = 0 ] && echo "File 'hello' created successfully!" || echo "Error creating file 'hello'."
+touch hello
+if [ $? -eq 0 ]
+then
+    echo "File 'hello' created successfully!"
+fi
+[ $? -ne 0 ] && echo "Error creating file 'hello'."
