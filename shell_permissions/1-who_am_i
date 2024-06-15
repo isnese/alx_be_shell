@@ -1,1 +1,4 @@
-su - root 
+#!/bin/bash
+cat << EOF
+su - root
+EOF
