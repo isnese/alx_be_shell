@@ -1,2 +1,3 @@
-#!/bin/bash touch hello if [ $? -eq 0 ] then echo "File 'hello' created successfully!" else echo "Error creating file 'hello'."
+#!/bin/bash
+touch hello if [ $? -eq 0 ] then echo "File 'hello' created successfully!" else echo "Error creating file 'hello'."
 fi
