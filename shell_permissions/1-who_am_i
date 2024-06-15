@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "su -l betty" > command.sh chmod +x command.sh
+whoami
