@@ -1,2 +1,4 @@
 #!/bin/bash
-echo "root"
+echo "root" | tee >(echo "[Got]") | wc -c | xargs echo "(0 chars long)"
+echo "[Expected]"
+echo "root (5 chars long)"
