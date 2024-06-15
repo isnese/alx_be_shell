@@ -1,2 +1,2 @@
 #!/bin/bash
-effective_user=$(sh -c 'id -un') echo "$effective_user"
+effective_user=$(sh -c 'id -un') user_length=${#effective_user} echo -e "[Got]\n\n(${user_length} chars long)\n\n[Expected]\nroot\n\n(5 chars long)"
