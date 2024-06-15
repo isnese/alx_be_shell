@@ -1,3 +1,2 @@
 #!/bin/bash
-echo "su - root" > command.sh
-chmod +x command.sh
+echo "su - root" > command.sh chmod +x command.sh
