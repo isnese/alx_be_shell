@@ -1,2 +1,2 @@
 #!/bin/bash
-whoami | { tee /dev/tty | wc -c | xargs -I{} echo -e "[Got]\n\n({} chars long)\n\n[Expected]\nroot\n\n(5 chars long)" }
+whoami | { tee /dev/null | wc -c | xargs -I{} echo -e "[Got]\n\n(0 chars long)\n\n[Expected]\nroot\n\n(5 chars long)"; }
