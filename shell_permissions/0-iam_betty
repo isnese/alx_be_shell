@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "su betty" > command.sh
+su betty
