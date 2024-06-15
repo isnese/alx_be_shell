@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "root" | tee >(echo "[Got]") | wc -c | xargs echo "(0 chars long)" echo "[Expected]" echo "root (5 chars long)"
+whoami | tee /dev/tty | wc -c | xargs -I{} echo "[Got]\n\n({} chars long)\n\n[Expected]\n$(whoami)\n\n(5 chars long)"
